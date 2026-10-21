@@ -1,0 +1,9 @@
+{
+  "uuid": "system-monitor@ubuntu-widget",
+  "name": "System Monitor Top Bar",
+  "description": "Compact CPU, RAM, temperature, GPU and uptime indicators in the top bar, with a dropdown showing details and Bluetooth device battery levels.",
+  "shell-version": ["51"],
+  "settings-schema": "org.gnome.shell.extensions.systemmonitor",
+  "version-name": "1.0.0",
+  "url": ""
+}

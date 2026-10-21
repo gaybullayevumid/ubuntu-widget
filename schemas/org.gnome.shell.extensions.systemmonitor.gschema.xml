@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.systemmonitor" path="/org/gnome/shell/extensions/systemmonitor/">
+    <key name="show-cpu" type="b">
+      <default>true</default>
+      <summary>Show CPU indicator</summary>
+    </key>
+    <key name="show-memory" type="b">
+      <default>true</default>
+      <summary>Show RAM indicator</summary>
+    </key>
+    <key name="show-temperature" type="b">
+      <default>true</default>
+      <summary>Show temperature indicator</summary>
+    </key>
+    <key name="show-gpu" type="b">
+      <default>true</default>
+      <summary>Show GPU indicator</summary>
+      <description>Also controls whether the GPU is polled at all.</description>
+    </key>
+    <key name="show-uptime" type="b">
+      <default>true</default>
+      <summary>Show uptime indicator</summary>
+    </key>
+    <key name="show-bluetooth" type="b">
+      <default>true</default>
+      <summary>Show Bluetooth battery levels in the dropdown</summary>
+    </key>
+    <key name="refresh-interval" type="u">
+      <range min="1" max="10"/>
+      <default>2</default>
+      <summary>Refresh interval for CPU, RAM, temperature and uptime (seconds)</summary>
+    </key>
+    <key name="gpu-refresh-interval" type="u">
+      <range min="1" max="30"/>
+      <default>3</default>
+      <summary>Refresh interval for GPU statistics (seconds)</summary>
+    </key>
+    <key name="bluetooth-refresh-interval" type="u">
+      <range min="5" max="300"/>
+      <default>60</default>
+      <summary>Fallback refresh interval for Bluetooth batteries (seconds)</summary>
+      <description>Connection changes and BlueZ battery changes are applied immediately through D-Bus signals; this is only a safety net.</description>
+    </key>
+    <key name="temperature-unit" type="s">
+      <choices>
+        <choice value="celsius"/>
+        <choice value="fahrenheit"/>
+      </choices>
+      <default>"celsius"</default>
+      <summary>Temperature unit</summary>
+    </key>
+  </schema>
+</schemalist>
